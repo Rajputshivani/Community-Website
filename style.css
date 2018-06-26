@@ -1,32 +1,129 @@
 body{
+    margin:0;
+    padding:0;
+    background:white;
+ 
     
-    background-image: url('../Assests/1.png');
-    background-size: cover;
-
-    
 }
 
 
-.Aboutus {
-    background:linear-gradient(red,yellow);
-    width:auto;
-    height: 70px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    border-bottom-left-radius:10px solid grey; ;
-
+.footer-body{
+ 
+    background:#262626;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    height: 90px;
 }
 
-.Aboutus h1:hover{
-    text-shadow: 2px 2px 5px black;
 
+
+.footer-body .comp-title{
+    color:white;
+    text-align:center;
+    height:20px;
+    padding:5px;
+    background: #262626;
+ 
 }
-
-.content{
-    background-color:whitesmoke;
-    width:auto;
-    height:auto;
+.footer-body .social-icons{
+  
+    position: relative;
+    height: 30%;
+    padding: 15px 0px 15px 0px;
+}
+.footer-body .pushlish{
+    position: relative;
+    height: 25%;
     padding: 10px;
+    text-align: center;
+    background: #262626;
+    color:white;
+}
+
+.social-icons{
+    background:#262626;
+}
+
+.icon{
+    display: flex;
+    position:absolute;
+
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.icon li{
+    list-style:none;
+}
+.icon li a{
+    width:35px;
+    height:35px;
+    background:#fff;
+    text-align: center;
+    line-height:35px;
+    font-size:20px;
+    margin: 0 10px;
+    display:block;
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+    border: 3px solid #fff;
+    z-index:1;
+}
+
+.icon li a .fab{
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.icon li a:hover .fab{
+    color:#fff;
+ transform: rotateY(360deg);
+
+}
+
+.icon li a:before {
+   content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width:100%;
+   height: 100%;
+   background:#f00;
+   transition: .5s; 
+   z-index:2;
+
+   }
+
+   .icon li a:hover:before{
+       top: 0;
+
+   }
+
+   .icon li:nth-child(1) a:before{
+       background:#3b5999;
+   }
+   .icon li:nth-child(2) a:before{
+    background:#55acee;
+}
+.icon li:nth-child(3) a:before{
+    background:#4dc247;
+}
+.icon li:nth-child(4) a:before{
+    background:#dd4b39;
+}
+.icon li:nth-child(5) a:before{
+    background:#cd201f;
+}
+.icon li:nth-child(6) a:before{
+    background:#0077B5;
+}
+
+/*------------- ADVERISMENT*-----------------*/
+.adver{
+    background: red;
 }
