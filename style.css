@@ -1,0 +1,32 @@
+body{
+    
+    background-image: url('../Assests/1.png');
+    background-size: cover;
+
+    
+}
+
+
+.Aboutus {
+    background:linear-gradient(red,yellow);
+    width:auto;
+    height: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-bottom-left-radius:10px solid grey; ;
+
+}
+
+.Aboutus h1:hover{
+    text-shadow: 2px 2px 5px black;
+
+}
+
+.content{
+    background-color:whitesmoke;
+    width:auto;
+    height:auto;
+    padding: 10px;
+}
